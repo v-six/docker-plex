@@ -40,7 +40,7 @@ RUN \
  fi && \
  curl -o \
 	/tmp/plexmediaserver.deb -L \
-	"${PLEX_DOWNLOAD}/${PLEX_RELEASE}/debian/plexmediaserver_${PLEX_RELEASE}_${PLEX_ARCH}.deb" && \
+	"https://artifacts.plex.tv/plex-media-server-experimental/1.17.1.1786-0917f5c52/debian/plexmediaserver_1.17.1.1786-0917f5c52_amd64.deb" && \
  dpkg -i /tmp/plexmediaserver.deb && \
  mv /sbin/udevadm.bak /sbin/udevadm && \
  echo "**** ensure abc user's home folder is /app ****" && \
